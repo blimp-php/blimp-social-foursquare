@@ -49,7 +49,7 @@ class FoursquareAccessToken extends Oauth2AccessToken {
         return $redirect_url;
     }
 
-    public function processAccountData(array $access_token) {
+    public function processAccountData($access_token) {
         if ($access_token != NULL && $access_token['access_token'] != NULL) {
             /* Get profile_data */
             $params = [
